@@ -1,0 +1,72 @@
+.faq{
+    width: 100%;
+    @include df();
+    padding-bottom: 136px;
+    &__block{
+        width: 100%;
+        @include dfc();
+        gap: 48px;
+        text-align: center;
+    }
+    &__subtitle{
+        width: 100%;
+        p{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            color: $bg-color;
+        }
+    }
+    &__content{
+        width: 50%;
+        @include dfc(center, start);
+        gap: 64px;
+    }
+    &__btn{
+        width: 80%;
+        @include df();
+        gap: 12px;
+        button{
+            @include btn(6px 12px,);
+            border: none;
+            color: $bg-color;
+            &:hover{
+                background: $bg-btn;
+                color: $bg-py;
+            }
+        }
+    }
+    &__desc{
+        width: 100%;
+        @include dfc(start, center);
+        gap: 24px   ;
+    }
+    &__card{
+       width: 100%; 
+       @include df(start, center);
+       gap: 32px;
+       border-bottom: 1px solid $bg-border;
+       font-size: 16px;
+       font-weight: 500;
+       line-height: 24px;
+       transition: .5s;
+       &:hover{
+            background: $bg-py;
+            cursor: pointer;
+            p{
+                color: $bg-sy;
+            }
+       }
+       &:active{
+        transform: scale(.8);
+       }
+       p{
+            color: $bg-text;
+       }
+       span{
+            color: $bg-color;
+            flex: 1;
+            text-align: left;
+       }
+    }
+}

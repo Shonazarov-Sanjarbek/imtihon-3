@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo-img.png">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>fleet</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="navbar" id="navbar">
+                <div class="navbar__block">
+                    <div class="navbar__logo">
+                        <div class="navbar__logo__img">
+                            <img src="./assets/img/logo.png" alt="">
+                        </div>
+                        <select name="" id="" class="navbar__logo__content">
+                            <option value="">select</option>
+                        </select>
+                    </div>
+                    <div class="navbar__icons">
+                        <ul class="navbar__collection">
+                            <li class="navbar__item">
+                                <a href="#">
+                                    <span>
+                                        Support
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#">
+                                    <img src="./assets/img/navbar-network.png" alt="">
+                                    <span>
+                                        Language
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="navbar__btn">
+                            <span>
+                                List your property
+                            </span>
+                        </button>
+                        <div class="navbar__jingle">
+                            <a href="#">
+                                <img src="./assets/img/jingle.png" alt="">
+                            </a>
+                        </div>
+                        <div class="navbar__img">
+                            <img src="./assets/img/navbar-img.png" alt="">
+                        </div>
+                        <div onclick="toggleShow()" class="navbar__menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="maion">
+        <div class="container-lrg">
+            <section class="hero">
+                <div class="hero__block">
+                    <div class="hero__card">
+                        <div class="hero__subtitle">
+                            <p>
+                                Car rentals 
+                            </p>
+                        </div>
+                        <div class="hero__desc">
+                            <p>
+                                Find and book a great experience.
+                            </p>
+                        </div>
+                            <button class="hero__btn">
+                                <span>
+                                    Start your search
+                                </span>
+                            </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container-lrg">
+            <section class="location">
+                <div class="container">
+                    <div class="location__card">
+                        <div class="location__block">
+                            <ul class="location__collection">
+                                <li class="location__item">
+                                    <a href="#">
+                                        <span>
+                                            Stays
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="location__item">
+                                    <a href="#">
+                                        <span>
+                                            Flights
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="location__item">
+                                    <a href="#">
+                                        <span>
+                                            Cars
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="location__item">
+                                    <a href="#">
+                                        <span>
+                                            Things to do
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="location__btn">
+                                <button>
+                                    Return to same location
+                                </button>
+                                <button>
+                                    Return to same different location
+                                </button>
+                            </div>
+                            <div class="location__wrapper">
+                                <div class="location__box">
+                                    <div class="location__box__img">
+                                        <img src="./assets/img/location-icon1.png" alt="">
+                                    </div>
+                                    <div class="location__box__desc">
+                                        <p>
+                                            Pickup location
+                                        </p>
+                                        <span>
+                                            Where are you?
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="location__box">
+                                    <div class="location__box__img">
+                                        <img src="./assets/img/location-icon2.png" alt="">
+                                    </div>
+                                    <div class="location__box__desc">
+                                        <p>
+                                            Tue, May 11
+                                        </p>
+                                        <span>
+                                            10:00 AM
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="location__box">
+                                    <div class="location__box__img">
+                                        <img src="./assets/img/location-icon2.png" alt="">
+                                    </div>
+                                    <div class="location__box__desc">
+                                        <p>
+                                            Fri, May 11
+                                        </p>
+                                        <span>
+                                            10:00 AM
+                                        </span>
+                                    </div>
+                                    <div class="location__box__search">
+                                        <img src="./assets/img/location-search.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <section class="destinations" id="destinations">
+            <div class="container">
+                <div class="destinations__block">
+                    <div class="destinations__wrapper__subtitle">
+                        <div class="destinations__subtitle">
+                            <p>
+                                Popular destinations
+                            </p>
+                        </div>
+                        <div class="destinations__title">
+                            <p>
+                                for car rentals
+                            </p>
+                        </div>
+                    </div>
+                    <div class="destinations__wrapper">
+                        <div class="destinations__card">
+                            <div class="destinations__img">
+                                <img src="./assets/img/destination-card1.png" alt="">
+                            </div>
+                            <div class="destinations__card__content">
+                                <p>
+                                    Paris
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="destinations__card">
+                            <div class="destinations__img">
+                                <img src="./assets/img/destination-card2.png" alt="">
+                            </div>
+                            <div class="destinations__card__content">
+                                <p>
+                                    London
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="destinations__card">
+                            <div class="destinations__img">
+                                <img src="./assets/img/destination-card3.png" alt="">
+                            </div>
+                            <div class="destinations__card__content">
+                                <p>
+                                    Ams
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="destinations__card">
+                            <div class="destinations__img">
+                                <img src="./assets/img/destination-card1.png" alt="">
+                            </div>
+                            <div class="destinations__card__content">
+                                <p>
+                                    Paris
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destinations__btn">
+                        <button>
+                            <span>
+                                Show more
+                            </span>
+                            <p>
+                                >
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fleet" id="fleet">
+            <div class="container">
+                <div class="fleet__block">
+                    <div class="fleet__content">
+                        <div class="fleet__subtitle">
+                            <p>
+                                supercharge your planning powers
+                            </p>
+                        </div>
+                        <div class="fleet__title">
+                            <p>
+                                Rent a car in minutes with Fleet
+                            </p>
+                        </div>
+                        <div class="fleet__desc">
+                            <p>
+                                Stacks is a production-ready library of stackable content blocks built in React Native.
+                            </p>
+                        </div>
+                        <form class="fleet__inp" action="">
+                            <input required type="tel" placeholder="Enter your phone number">
+                            <button class="fleet__btn">
+                                <img src="./assets/img/fleet-icon.png" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="fleet__img">
+                        <img src="./assets/img/fleet-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explore" id="explore">
+            <div class="container">
+                <div class="explore__block">
+                    <div class="explore__wrapper__subtitle">
+                        <div class="explore__subtitle">
+                            <p>
+                                Explore nearby
+                            </p>
+                        </div>
+                        <div class="destinations__title">
+                            <p>
+                                for car rentals
+                            </p>
+                        </div>
+                    </div>
+                    <div class="explore__wrapper">
+                        <div class="explore__card">
+                            <div class="explore__img">
+                                <img src="./assets/img/destination-card1.png" alt="">
+                            </div>
+                            <div class="explore__card__content">
+                                <p>
+                                    Paris
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="explore__card">
+                            <div class="explore__img">
+                                <img src="./assets/img/destination-card2.png" alt="">
+                            </div>
+                            <div class="explore__card__content">
+                                <p>
+                                    London
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="explore__card">
+                            <div class="explore__img">
+                                <img src="./assets/img/destination-card3.png" alt="">
+                            </div>
+                            <div class="explore__card__content">
+                                <p>
+                                    Ams
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explore__wrapper">
+                        <div class="explore__card">
+                            <div class="explore__img">
+                                <img src="./assets/img/destination-card1.png" alt="">
+                            </div>
+                            <div class="explore__card__content">
+                                <p>
+                                    Paris
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="explore__card">
+                            <div class="explore__img">
+                                <img src="./assets/img/destination-card2.png" alt="">
+                            </div>
+                            <div class="explore__card__content">
+                                <p>
+                                    London
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="explore__card">
+                            <div class="explore__img">
+                                <img src="./assets/img/destination-card3.png" alt="">
+                            </div>
+                            <div class="explore__card__content">
+                                <p>
+                                    Ams
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explore__wrapper">
+                        <div class="explore__card">
+                            <div class="explore__img">
+                                <img src="./assets/img/destination-card1.png" alt="">
+                            </div>
+                            <div class="explore__card__content">
+                                <p>
+                                    Paris
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="explore__card">
+                            <div class="explore__img">
+                                <img src="./assets/img/destination-card2.png" alt="">
+                            </div>
+                            <div class="explore__card__content">
+                                <p>
+                                    London
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="explore__card">
+                            <div class="explore__img">
+                                <img src="./assets/img/destination-card3.png" alt="">
+                            </div>
+                            <div class="explore__card__content">
+                                <p>
+                                    Ams
+                                </p>
+                                <span>
+                                    Car rentals in 86 pickup locations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explore__btn">
+                        <button>
+                            <span>
+                                Show more
+                            </span>
+                            <p>
+                                >
+                            </p>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services__block">
+                    <div class="services__wrapper__title">
+                        <div class="services__subtitle">
+                            <p>
+                                A creative agency that lead and inspire
+                            </p>
+                        </div>
+                        <div class="services__title">
+                            <p>
+                                Amazing Services
+                            </p>
+                        </div>
+                        <button class="services__btn">
+                            <span>Contact Us</span>
+                        </button>
+                    </div>
+                    <div class="services__wrapper">
+                        <div class="services__card">
+                            <div class="services__img">
+                                <img src="./assets/img/services-img1.png" alt="">
+                            </div>
+                            <div class="services__desc">
+                                <p>
+                                    1+M reviewers
+                                </p>
+                                <span>
+                                    We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__card">
+                            <div class="services__img">
+                                <img src="./assets/img/services-img2.png" alt="">
+                            </div>
+                            <div class="services__desc">
+                                <p>
+                                    24/7 customer service
+                                </p>
+                                <span>
+                                    We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="services__card">
+                            <div class="services__img">
+                                <img src="./assets/img/services-img3.png" alt="">
+                            </div>
+                            <div class="services__desc">
+                                <p>
+                                    Free cancellation
+                                </p>
+                                <span>
+                                    We realize ideas from simple to complex, everything becomes easy to use and reach the most potential customers.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="logos" id="logos">
+            <div class="container">
+                <div class="logos__block">
+                    <div class="logos__card">
+                        <img src="./assets/img/logos-card1.png" alt="">
+                    </div>
+                    <div class="logos__card">
+                        <img src="./assets/img/logos-card2.png" alt="">
+                    </div>
+                    <div class="logos__card">
+                        <img src="./assets/img/logos-card3.png" alt="">
+                    </div>
+                    <div class="logos__card">
+                        <img src="./assets/img/logos-card4.png" alt="">
+                    </div>
+                    <div class="logos__card">
+                        <img src="./assets/img/logos-card5.png" alt="">
+                    </div>
+                    <div class="logos__card">
+                        <img src="./assets/img/logos-card1.png" alt="">
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="faq__block">
+                    <div class="faq__subtitle">
+                        <p>
+                            Frequently asked questions
+                        </p>
+                    </div>
+                    <div class="faq__content">
+                        <div class="faq__btn">
+                            <button>
+                                <span>
+                                    General
+                                </span>
+                            </button>
+                            <button>
+                                <span>
+                                    Support
+                                </span>
+                            </button>
+                            <button>
+                                <span>
+                                    Hosting
+                                </span>
+                            </button>
+                            <button>
+                                <span>
+                                    Product
+                                </span>
+                            </button>
+                        </div>
+                        <div class="faq__desc">
+                            <div class="faq__card">
+                                <p>
+                                    01
+                                </p>
+                                <span>
+                                    How does it work?
+                                </span>
+                                <img src="./assets/img/down-icon.png" alt="">
+                            </div>
+                            <div class="faq__card">
+                                <p>
+                                    02
+                                </p>
+                                <span>
+                                    How does it work?
+                                </span>
+                                <img src="./assets/img/down-icon.png" alt="">
+                            </div>     
+                            <div class="faq__card">
+                                <p>
+                                    03
+                                </p>
+                                <span>
+                                    How does it work?
+                                </span>
+                                <img src="./assets/img/down-icon.png" alt="">
+                            </div>     
+                            <div class="faq__card">
+                                <p>
+                                    04
+                                </p>
+                                <span>
+                                    How does it work?
+                                </span>
+                                <img src="./assets/img/down-icon.png" alt="">
+                            </div>     
+                            <div class="faq__card">
+                                <p>
+                                    05
+                                </p>
+                                <span>
+                                    How does it work?
+                                </span>
+                                <img src="./assets/img/down-icon.png" alt="">
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pickup" id="pickup">
+            <div class="container">
+                <div class="pickup__block">
+                    <div class="pickup__subtitle__wrapper">
+                        <div class="pickup__subtitle">
+                            <p>
+                                Recommended pickup locations
+                            </p>
+                        </div>
+                        <div class="pickup__title">
+                            <p>
+                                A lot of amazing experiences 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pickup__wrapper">
+                        <div class="pickup__card">
+                            <div class="pickup__number">
+                                <button>
+                                    <span>
+                                        128
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="pickup__content">
+                                <img src="./assets/img/pickup-car.png" alt="">
+                                <div class="pickup__text">
+                                    <p>
+                                        South Virgilland
+                                    </p>
+                                    <span>
+                                        From Rs. 1,461 per day
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pickup__card">
+                            <div class="pickup__number">
+                                <button>
+                                    <span>
+                                        128
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="pickup__content">
+                                <img src="./assets/img/pickup-car.png" alt="">
+                                <div class="pickup__text">
+                                    <p>
+                                        South Virgilland
+                                    </p>
+                                    <span>
+                                        From Rs. 1,461 per day
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pickup__card">
+                            <div class="pickup__number">
+                                <button>
+                                    <span>
+                                        128
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="pickup__content">
+                                <img src="./assets/img/pickup-car.png" alt="">
+                                <div class="pickup__text">
+                                    <p>
+                                        South Virgilland
+                                    </p>
+                                    <span>
+                                        From Rs. 1,461 per day
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pickup__card">
+                            <div class="pickup__number">
+                                <button>
+                                    <span>
+                                        128
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="pickup__content">
+                                <img src="./assets/img/pickup-car.png" alt="">
+                                <div class="pickup__text">
+                                    <p>
+                                        South Virgilland
+                                    </p>
+                                    <span>
+                                        From Rs. 1,461 per day
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pickup__card">
+                            <div class="pickup__number">
+                                <button>
+                                    <span>
+                                        128
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="pickup__content">
+                                <img src="./assets/img/pickup-car.png" alt="">
+                                <div class="pickup__text">
+                                    <p>
+                                        South Virgilland
+                                    </p>
+                                    <span>
+                                        From Rs. 1,461 per day
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__navbar activ active">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <ul class="footer__collection activ">
+                    <li class="footer__item"><a href="#">HOME</a></li>
+                    <li class="footer__item"><a href="#">PROJECT</a></li>
+                </ul>
+                <ul class="footer__collection activ">
+                    <li class="footer__item"><a href="#">What We Do</a></li>
+                    <li class="footer__item"><a href="#">Press</a></li>
+                </ul>
+                <ul class="footer__collection none">
+                    <li class="footer__item"><a href="#">Jobs</a></li>
+                    <li class="footer__item"><a href="#">Download</a></li>
+                </ul>
+                <div class="footer__logo">
+                    <b>Join our community 🔥</b>
+                    <form action="">
+
+                        <div class="footer__inp">
+                            <input required aria- placeholder="Enter your email" type="text">
+                            <button><img src="./assets/img/fleet-icon.png" alt=""></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__suptitle">
+                <p>Copyright © 2021 UI8 LLC. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>

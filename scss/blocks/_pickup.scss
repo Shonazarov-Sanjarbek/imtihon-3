@@ -1,0 +1,86 @@
+.pickup{
+    width: 100%;
+    @include df();
+    padding-bottom: 136px;
+    &__block{
+        width: 100%;
+        @include dfc();
+        gap: 64px;
+        text-align: center;
+    }
+    &__subtitle__wrapper{
+        width: 100%;
+        @include dfc();
+        gap: 12px;
+    }
+    &__subtitle{
+        width: 100%;
+        p{
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            color: $bg-color;
+        }
+    }
+    &__title{
+        width: 50%;
+        p{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            color: $bg-text;
+        }
+    }
+    &__wrapper{
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+        @include df();
+        gap: 32px;
+    }
+    &__card{
+        width: 256px;
+        height: 260px;
+        @include dfc();
+        gap: 74px;
+        padding: 32px;
+        border-radius: 24px;
+        border: 1px solid $bg-border;
+    }
+    &__number{
+        width: 100%;
+        @include df(start ,center);
+        button{
+            @include btn(8px 12px, $bg-text);
+            border-radius: 32px;
+            border: none;
+            color: $bg-py;
+        }
+    }
+    &__content{
+        width: 100%;
+        @include dfc(start, center);
+        gap: 24px;
+        img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+    &__text{
+        width: 100%;
+        @include dfc(start, center);
+        gap: 4px;
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            color: $bg-color;
+        }
+        span{
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 400;
+            color: $bg-text;
+        }
+    }
+}

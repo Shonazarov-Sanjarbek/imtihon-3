@@ -1,0 +1,41 @@
+.logos{
+    width: 100%;
+    @include df();
+    padding-bottom: 136px;
+    &__block{
+        width: 100%;
+        @include df();
+        flex-wrap: wrap;
+    }
+    &__card{
+        width: 33.33%;
+        height: 150px;
+        @include df();
+    }
+    &__card:first-child{
+        border-right: 1px solid $bg-border;
+        border-bottom: 1px solid $bg-border;
+    }
+    &__card:nth-child(2){
+        border-left: 1px solid $bg-border;
+        border-right: 1px solid $bg-border;
+        border-bottom: 1px solid $bg-border;
+    }
+    &__card:nth-child(3){
+        border-left: 1px solid $bg-border;
+        border-bottom: 1px solid $bg-border;
+    }
+    &__card:nth-child(4){
+        border-right: 1px solid $bg-border;
+        border-top: 1px solid $bg-border;
+    }
+    &__card:nth-child(5){
+        border-left: 1px solid $bg-border;
+        border-right: 1px solid $bg-border;
+        border-top: 1px solid $bg-border;
+    }
+    &__card:last-child{
+        border-left: 1px solid $bg-border;
+        border-top: 1px solid $bg-border;
+    }
+}
