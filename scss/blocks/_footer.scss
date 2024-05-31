@@ -19,7 +19,6 @@
 
     &__inp {
         @include df(space-between, center);
-        display: flex;
         border: 2px solid $bg-border;
         border-radius: 20px;
         width: 250px;
@@ -80,13 +79,11 @@
         }
 
         &__inp {
-            display: flex;
-            border: 2px solid #E6E8EC;
+            @include df(space-between, center);
+            border: 2px solid $bg-border;
             border-radius: 20px;
             width: 250px;
-            align-items: center;
             padding: 8px 8px 8px 16px;
-            justify-content: space-between;
             margin-top: 16px;
 
             &:hover {
@@ -104,8 +101,7 @@
 
             button {
                 width: 24px;
-                background:
-                    #3B71FE;
+                background: $bg-sy;
                 height: 24px;
                 border-radius: 50%;
                 border: none;
@@ -135,13 +131,11 @@
         }
 
         &__inp {
-            display: flex;
-            border: 2px solid #E6E8EC;
+            @include df(space-between, center);
+            border: 2px solid $bg-border;
             border-radius: 20px;
             width: 250px;
-            align-items: center;
             padding: 8px 8px 8px 16px;
-            justify-content: space-between;
             margin-top: 16px;
 
             &:hover {
@@ -159,8 +153,7 @@
 
             button {
                 width: 24px;
-                background:
-                    #3B71FE;
+                background: $bg-sy;
                 height: 24px;
                 border-radius: 50%;
                 border: none;
