@@ -122,6 +122,7 @@
 }
 @media (max-width:750px) {
     .box{
+        margin-top: 20px;
         padding: 0 40px;
         &__block{
             display: flex;
@@ -159,6 +160,89 @@
         &__box{
             width: 100%;
             @include dfc(center, none);       
+        }
+    }
+}
+@media (max-width:550px) {
+    .location{
+        padding: 0 30px;
+        &__block{
+            @include df(none, none);
+            gap: 20px;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        &__card{
+            margin-top: -198.5px;
+            height: auto;
+        }
+        &__btn{
+            display: none;
+        }
+        &__box__img{
+            width: 32px;
+            height: 32px;
+        }
+        &__box__desc{
+            width: 100%;
+            @include dfc(center, none);
+            p{
+                @include df(none, center);
+                font-size: 18px;
+                font-weight: 700;
+                font-family: popins;
+                color: $bg-color;
+            }
+            span{
+                margin-left: 34px;
+                font-size: 13px;
+                font-family: popins;
+                font-weight: 300;
+                color: $bg-text;
+            }    
+        }
+    }
+}
+@media (max-width:450px) {
+    .location{
+        padding: 0 30px;
+       
+        &__block{
+            display: flex;
+            gap: 10px;
+            font-size: 12px;
+            font-weight: 300;
+        }
+        &__card{
+            margin-top: -190.5px;
+            height: auto ;
+            padding: 20px;
+        }
+        &__btn{
+            display: none;
+        }
+        &__box__img{
+            width: 30px;
+            height: 30px;
+        }
+        &__box__desc{
+            width: 100%;
+            @include dfc(center, none);
+            p{
+                @include df(none, center);
+                font-size: 16px;
+                font-weight: 700;
+                font-family: popins;
+                color: $bg-color;
+            }
+            span{
+                margin-left: 34px;
+                font-size: 12px;
+                font-family: popins;
+                font-weight: 300;
+                color: $bg-text
+            }
+            
         }
     }
 }
