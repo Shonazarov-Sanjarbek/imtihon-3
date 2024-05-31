@@ -94,5 +94,71 @@
         height: 64px;
         @include df();
     }
-
+}
+@media (max-width:990px) {
+    .location{
+        padding: 0 30px;
+        &__card{
+            margin-top: -168.5px;
+        }
+        &__box{
+            width: 50%;
+        }
+        &__box__desc{
+            margin-left: 34px;
+            font-size: 12px;
+            font-family: popins;
+            font-weight: 300;
+            color: $bg-text;
+            display: none;
+        }
+        &__box__img{
+            img{
+                width: 32px;
+                height: 32px;
+            }
+        }           
+    }
+}
+@media (max-width:750px) {
+    .box{
+        padding: 0 40px;
+        &__block{
+            display: flex;
+            gap: 20px;
+            font-size: 13px;
+            font-weight: 300;
+        }
+        &__card{
+            margin-top: -190.5px;
+            height: auto;
+        }
+        &__btn{
+            display: none;
+        }
+        &__box__img{
+            width: 32px;
+            height: 32px;
+        }
+        &__box__desc{
+            span{
+                margin-left: 34px;
+                font-size: 12px;
+                font-family: popins;
+                font-weight: 300;
+                color: $bg-text;               
+            }
+            p{
+                @include df(none, center);
+                font-size: 22px;
+                font-weight: 800;
+                font-family: popins;
+                color: $bg-color;
+            }           
+        }
+        &__box{
+            width: 100%;
+            @include dfc(center, none);       
+        }
+    }
 }
