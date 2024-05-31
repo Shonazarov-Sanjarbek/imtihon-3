@@ -128,7 +128,7 @@
     .header{
       padding: 0 20px;
       .navbar{
-        .collection{
+        &__collection{
             position: fixed;
             top: 0;
             left: -350px;
@@ -172,26 +172,12 @@
     .header{
       padding: 40px 40px 26px 40px;
       .navbar{
-        display: flex;
-        align-items: center;
+        @include df(none, center);
         &__logo{
             img{
                 width: 70px;
                 height: 28px;
             }
-        }
-        .collection{
-            position: fixed;
-            top: 0;
-            left: -350px;
-            width: 350px;
-            background: #f1f1f1;
-            color: #000;
-            height: 100vh;
-            flex-direction: column;
-            padding: 30px;
-            transition: .5s;
-            width: 50%;
         }
           &__collection{
               position: fixed;
@@ -204,7 +190,6 @@
               flex-direction: column;
               padding: 30px;
               transition: .5s;
-              width: 50%;
               button{
                   display: block;
               }

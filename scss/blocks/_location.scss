@@ -10,10 +10,9 @@
         box-shadow: 0 10px 50px;
     }
     &__block{
-        margin: 40px;
+        margin: 40px 0;
         @include dfc(); 
         gap: 12px;
-        padding: 40px;
     }
     &__collection{
         width: 100%;
@@ -76,6 +75,7 @@
         max-width: 188px;
         height: 56px;
         @include dfc(start, center); 
+        margin: none;
         p{
             font-size:  24px;
             font-weight: 600;
@@ -105,7 +105,7 @@
             width: 50%;
         }
         &__box__desc{
-            margin-left: 34px;
+            margin-left: 10px;
             font-size: 12px;
             font-family: popins;
             font-weight: 300;
@@ -114,116 +114,82 @@
         }
         &__box__img{
             img{
-                width: 32px;
-                height: 32px;
+                width: 28px;
+                height: 28px;
             }
-        }           
+        }         
     }
 }
 @media (max-width:750px) {
     .box{
         margin-top: 20px;
         padding: 0 40px;
+        &__card{
+            margin-top: -190.5px;
+            height: auto;
+        }
         &__block{
             display: flex;
             gap: 20px;
             font-size: 13px;
             font-weight: 300;
-        }
-        &__card{
-            margin-top: -190.5px;
-            height: auto;
+            margin: none;
         }
         &__btn{
             display: none;
         }
         &__box__img{
-            width: 32px;
-            height: 32px;
+            width: 24px;
+            height: 24px;
         }
         &__box__desc{
-            span{
+            p{
                 margin-left: 34px;
                 font-size: 12px;
                 font-family: popins;
                 font-weight: 300;
-                color: $bg-text;               
+                color: $bg-text; 
             }
-            p{
+            span{
                 @include df(none, center);
                 font-size: 22px;
                 font-weight: 800;
                 font-family: popins;
                 color: $bg-color;
+                display: none;             
             }           
         }
         &__box{
             width: 100%;
             @include dfc(center, none);       
         }
+        &__box__search{
+            display: none;
+        }  
     }
 }
 @media (max-width:550px) {
     .location{
         padding: 0 30px;
         &__block{
-            @include df(none, none);
+            @include df(start, start);
             gap: 20px;
             font-size: 13px;
             font-weight: 300;
+            padding: none;
+            margin: none;
         }
         &__card{
             margin-top: -198.5px;
             height: auto;
         }
+
         &__btn{
             display: none;
         }
         &__box__img{
-            width: 32px;
-            height: 32px;
-        }
-        &__box__desc{
-            width: 100%;
-            @include dfc(center, none);
-            p{
-                @include df(none, center);
-                font-size: 18px;
-                font-weight: 700;
-                font-family: popins;
-                color: $bg-color;
-            }
-            span{
-                margin-left: 34px;
-                font-size: 13px;
-                font-family: popins;
-                font-weight: 300;
-                color: $bg-text;
-            }    
-        }
-    }
-}
-@media (max-width:450px) {
-    .location{
-        padding: 0 30px;
-       
-        &__block{
-            display: flex;
-            gap: 10px;
-            font-size: 12px;
-            font-weight: 300;
-        }
-        &__card{
-            margin-top: -190.5px;
-            height: auto ;
-            padding: 20px;
-        }
-        &__btn{
-            display: none;
-        }
-        &__box__img{
-            width: 30px;
-            height: 30px;
+            width: 18px;
+            height: 18px;
         }
         &__box__desc{
             width: 100%;
@@ -237,12 +203,70 @@
             }
             span{
                 margin-left: 34px;
+                font-size: 13px;
+                font-family: popins;
+                font-weight: 300;
+                color: $bg-text;
+                display: none;
+            }    
+        }
+        &__box__search{
+            display: none;
+        }  
+    }
+}
+@media (max-width:450px) {
+    .location{
+        padding: 0 30px;
+       
+        &__block{
+            display: flex;
+            gap: 10px;
+            font-size: 12px;
+            font-weight: 300;
+            margin: none ;
+        }
+        &__card{
+            margin-top: -190.5px;
+            height: auto ;
+            padding: 20px;
+        }
+        &__collection{
+            gap: 24px;
+        }
+        &__btn{
+            display: none;
+        }
+
+        &__box{
+            gap: 6px;
+        }
+        &__box__img{
+            width: 16px;
+            height: 16px;
+        }
+        &__box__desc{
+            width: 100%;
+            @include dfc(center, start);
+            p{
+                @include df(start, center);
+                font-size: 14px;
+                font-weight: 700;
+                font-family: popins;
+                color: $bg-color;
+            }
+            span{
+                margin-left: 34px;
                 font-size: 12px;
                 font-family: popins;
                 font-weight: 300;
-                color: $bg-text
+                color: $bg-text;
+                display: none;
             }
             
         }
+        &__box__search{
+            display: none;
+        }  
     }
 }
